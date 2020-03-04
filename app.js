@@ -21,7 +21,7 @@ mongoose.connect(mongoDbUrl,()=>{
 });
 
 
-app.get('/app/:id', checkUserAuth, findApp, renderView, sendJSON);
+app.get('/app/:id', checkUserAuth, renderView, sendJSON);
 
 function checkUserAuth(req, res, next) {
   if (req.session.user) return next();
