@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -11,15 +12,14 @@ const flash = require('connect-flash');
 const {mongoDbUrl} = require('./config/database');
 const passport = require('passport');
 
-
 mongoose.Promise = global.Promise;
 
+mongoose.connect(mongoDbUrl,()=>{
 
-mongoose.connect(mongoDbUrl).then(db =>{
 
-    console.log('MONGO connected');
+	console.log('connected');
+});
 
-}).catch(error=> console.log(error));
 
 
 
