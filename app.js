@@ -92,10 +92,9 @@ app.use('/admin/posts', posts);
 app.use('/admin/categories', categories);
 app.use('/admin/comments', comments);
 
+const port = process.env.PORT || 4500;
 
-
-
-app.listen(4500, ()=>{
+app.listen(port, ()=>{
 
 console.log('app is run');
 
