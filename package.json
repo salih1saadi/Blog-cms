@@ -4,9 +4,8 @@
   "description": "a cms in nodejs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "run": "clean something"
+
+    "start": "node app.js"
   },
   "keywords": [
     "CMS"
